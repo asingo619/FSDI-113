@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ article.title }}{% endblock title %}
+
+{% block content%}
+    <h1>{{ article.title }}</h1>
+    <p>Created by: {{ article.author}} | On {{ article.created_at }}</p>
+    <p>{{ article.body }}</p>
+{% endblock content %}
+
